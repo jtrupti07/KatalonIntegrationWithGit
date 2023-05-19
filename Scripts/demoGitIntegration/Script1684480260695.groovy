@@ -23,9 +23,11 @@ WebUI.maximizeWindow()
 
 WebUI.navigateToUrl('https://www.automationtesting.co.uk/')
 
-WebUI.click(findTestObject('Object Repository/Page_Homepage/strong_Automation Testing'))
-
 WebUI.verifyElementText(findTestObject('Object Repository/Page_Homepage/strong_Automation Testing'), 'Automation Testing')
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_Homepage/h1_Testing Arena'), 'Testing Arena')
+
+WebUI.click(findTestObject('Page_Homepage/sidebarElement'))
 
 WebUI.closeBrowser()
 
